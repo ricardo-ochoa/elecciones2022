@@ -1,0 +1,130 @@
+
+/* section */
+
+
+  
+  .section {
+    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  
+    grid-template-areas:
+    "partidos-text 0 "
+    "partidos locales ";
+  
+    color:  var(--text-color);
+  }
+  
+  .partidos-text{
+    grid-area: partidos-text;
+  }
+  
+  .section-title{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  
+  }
+  
+  .subtitle{
+    font-size: 43px;
+    margin: 0;
+    font-weight: 800;
+  }
+  
+  h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+
+  
+  .partido-logo{
+    width: 90px;
+    margin: 0.5rem 1rem 0 0;
+  }
+  
+  .partidos-locales{
+    grid-area: locales;
+  }
+  
+  
+  .partidos{
+    grid-area: partidos;
+  }
+  
+  
+  
+  @media (max-width: 1200px) {
+  
+  .section {
+    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 800px;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+  
+    grid-template-areas:
+    "partidos-text "
+    "partidos"
+    "locales";
+  }
+
+  }
+  
+  @media (max-width: 1024px) {
+
+    section{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+   
+  
+  }
+  
+  @media (max-width: 600px) {
+  
+    .section {
+
+      
+        grid-template-areas:
+        "partidos-text "
+        "partidos"
+        "locales";
+      }
+
+      .partido-logo{
+        width: 70px;
+        margin: 0.5rem 1rem 0 0;
+      }
+
+      .subtitle{
+        font-size: 34px;
+        margin: 0;
+        font-weight: 800;
+      }
+
+      .text_description_partidos{
+        font-size: 14px;
+        margin-bottom: 2rem;
+      }
+
+
+  
+  }
+  
+  @media (max-width: 375px) {
+
+  
+  }

@@ -3,12 +3,13 @@ import React from 'react'
 export const Partidos = () => {
   return (
     <div>
+        <section>
         <div className='section'>
 
             <div className='partidos-text'>
                     <p className='section-title'>PARTIDOS</p>
                     <h2 className='subtitle'>¿Qué partidos participan?</h2>
-                    <p className='text_description'>
+                    <p className='text_description_partidos'>
                     En las elecciones estatales tienen derecho a participar diez partidos políticos. Siete son partidos políticos con registro nacional y tres partidos políticos estatales:
                     </p>
             </div>
@@ -61,6 +62,9 @@ export const Partidos = () => {
             </div>
 
         </div>
+
+        </section>
+
     </div>
   )
 }

@@ -1,0 +1,97 @@
+
+.coalicion-section{
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.section-coaliciones {
+    margin: 0 auto;
+    padding: 6rem 0rem 6rem 0rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    /* height: initial; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 30px;
+    column-gap: 50px;
+    /* column-gap: 50px; */
+    /* margin-bottom: 6rem; */
+    grid-template-areas:
+        "partidos-text partidos-text partidos-text"
+        "vaporqroo pri movimiento"
+        "juntoshacemos autentico 0";
+    color: var(--text-color);
+}
+
+.vaporqroo {
+    grid-area: vaporqroo;
+}
+.pri {
+    grid-area: pri;
+}
+.movimiento {
+    grid-area: movimiento;
+}
+.juntoshacemos {
+    grid-area: juntoshacemos;
+}
+.autentico {
+    grid-area: autentico;
+}
+
+.partido-logo-coaliciones{
+    width: 70px;
+    margin: 0.5rem 1rem 0 0;
+}
+
+@media (max-width: 1200px) {
+
+
+    .section-coaliciones {
+
+        padding: 6rem 1rem 6rem 1rem;
+        grid-template-columns: repeat(2, 1fr);
+      
+        grid-template-areas:
+        "partidos-text partidos-text"
+        "vaporqroo pri"
+        "movimiento juntoshacemos"
+        "autentico 0";
+
+    }
+  
+  }
+  
+  @media (max-width: 1024px) {
+
+
+  
+  }
+  
+  @media (max-width: 600px) {
+
+    .section-coaliciones {
+      
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+        margin: 6rem 2rem 6rem 2rem;
+      
+        grid-template-areas:
+        "partidos-text"
+        "vaporqroo"
+        "pri"
+        "movimiento"
+        "juntoshacemos"
+        "autentico";
+
+    }
+
+
+  }
+  
+  @media (max-width: 375px) {
+
+  
+  }

@@ -1,9 +1,17 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@import  "../src/estilos/coaliciones.css";
+@import "../src/estilos/partidos.css";
+@import "../src/estilos/gobernador.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
   font-family: 'Noto Sans', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 html{
@@ -24,11 +32,21 @@ code {
 }
 
 .wrapper{
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-y:hidden;
+  width: fit-content;
+
 }
 
+.bop{
+  width: 150px;
+}
+
+.gradient{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(14, 27, 53, 0) 0%, #12203A 100%);
+}
 
 .card-home{
   position:absolute;
@@ -38,6 +56,8 @@ code {
 
   display:flex;
   flex-direction: column;
+
+
   
 }
 
@@ -47,10 +67,9 @@ code {
   animation: scroll 12s linear 1s infinite;
   overflow:hidden;
 
-  margin-left: 185px;
-
   display:flex;
   flex-direction: column;
+
 }
 
 .card-home3{
@@ -59,22 +78,24 @@ code {
   animation: scroll 15s linear 1s infinite;
   overflow:hidden;
 
-  margin-left: 370px;
-
   display:flex;
   flex-direction: column;
+
 }
 
 .imagemain{
   grid-area: imagemain;
-  margin: 0 auto;
   height: 728px;
+  width: fit-content;
 
-  width: 520px;
-  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
 
   clip-path: inset(0px 0px 0px 0px);
 }
+
+
 
 .card {
   width: 150px;
@@ -82,31 +103,35 @@ code {
 }
 
 
-/* @keyframes scroll {
+@keyframes scroll {
   from {bottom: 0px;}
   to {top: -300px;;}
-} */
+}
 
 
 .bg {
   z-index: -2;
   background-image: url("../src/assets/bg.jpg");
+  object-fit: cover;
+  width: 100vw;
+  background-repeat: round;
+
+  background: linear-gradient(rgba(7, 0, 73, 0.8), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6) 100%) center center / cover no-repeat fixed, url("../src/assets/bg.jpg");
   background-repeat: no-repeat;
-  overflow: hidden;
-  height: 728px;
-  overflow-y:hidden!important;
+  background-position: center center;
 }
 
 .main {
   z-index: -2;
   margin: 0 auto;
   align-items: center;
+  justify-items: center;
   max-width: 1200px;
-  
+
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
 
   grid-template-areas:"text imagemain";
@@ -116,6 +141,7 @@ code {
 
 
 .main-text{
+  z-index: 1;
   color: white;
   max-width: 570px;
   grid-area: text;
@@ -124,6 +150,7 @@ code {
 h1{
   font-size: 56px;
 }
+
 h4{
   font-size: 22px;
 }
@@ -133,56 +160,6 @@ h4{
 }
 
 
-/* section */
-.section {
-  margin: 0 auto;
-  align-items: flex-start;
-  max-width: 1200px;
-  height: 50vh;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-
-  grid-template-areas:
-  "partidos-text 0 "
-  "partidos locales ";
-
-  color:  var(--text-color);
-}
-
-.partidos-text{
-  grid-area: partidos-text;
-}
-
-.section-title{
-  margin-top: 2rem;
-  font-size: 1.2rem;
-
-}
-
-.subtitle{
-  font-size: 43px;
-  margin: 0;
-  font-weight: 200;
-}
-
-.partido-logo{
-  width: 90px;
-  margin: 0.5rem 1rem 0 0;
-}
-
-.partidos-locales{
-  grid-area: locales;
-}
-
-
-.partidos{
-  grid-area: partidos;
-}
-
 
 
 @media (max-width: 1200px) {
@@ -191,53 +168,12 @@ h4{
     margin-left: 2rem;
   }
 
+  .bop{
+    width: 110px;
+  }
   .card {
-    width: 120px;
+    width: 110px;
   }
-
-  .card-home{
-    margin-left: 25px;
-  }
-
-  .card-home2{
-    margin-left: 160px;
-  }
-
-  .card-home3{
-    margin-left: 295px;
-  }
-
-  .wrapper{
-    width: 100%;
-  }
-  
-.imagemain{
-  margin: 0 auto;
-  clip-path: inset(0px -100px 0px -100px);
-}
-
-
-.section {
-  margin: 0 auto;
-  align-items: flex-start;
-  max-width: 800px;
-  height: 50vh;
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  
-  margin-top: 6rem;
-  margin-bottom: 12rem;
-
-  grid-template-areas:
-  "partidos-text "
-  "partidos"
-  "locales";
-}
-
-.partidos-locales{
-  margin-bottom: 5rem;
-}
 
 
 }
@@ -251,46 +187,25 @@ h4{
   }
 
   .imagemain{
-    margin: 0 auto;
-    height: 550px;
-    width: 100%;
+    height: 400px;
+
+  }
+
+  .gradient{
+    bottom: 220px;
+    background: linear-gradient(180deg, rgba(14, 27, 53, 0) 0%, #12203A 90%);
   }
 
   .main-text{
+    z-index: 2;
     margin: 0 auto;
     text-align: center;
-  }
-
-  .bg {
-    background-repeat: round;
-    height: 90vh;
+    margin-bottom: 1.8rem;
   }
 
   .text_description{
     font-size: 14px;
     margin-bottom: 3rem;
-  }
-
-  .card-home{
-    margin-left: 100px;
-  }
-
-  .card-home2{
-    margin-left: 250px;
-  }
-
-  .card-home3{
-    margin-left: 400px;
-  }
-
-  .section {
-    
-    margin: 2rem 1rem 10rem 1rem;
-  
-    grid-template-areas:
-    "partidos-text "
-    "partidos"
-    "locales";
   }
 
 }
@@ -304,31 +219,15 @@ h4{
 
   h4{
     font-size: 18px;
-    margin: 1rem 2rem 0 2rem;
+    margin: 0 auto;
+        margin-top: 1rem;
   }
   
   .text_description{
     font-size: 14px;
-    margin: 2rem;
+    margin-bottom: 2rem;
+    margin: 1rem;
   }
-  
-
-  .card {
-    width: 100px;
-  }
-
-  .card-home{
-    margin-left: 100px;
-  }
-
-  .card-home2{
-    margin-left: 210px;
-  }
-
-  .card-home3{
-    margin-left: 320px;
-  }
-
 
 }
 
@@ -337,33 +236,21 @@ h4{
   h1{
     font-size: 32px;
     margin-top: 2rem;
-    
-  }
-
-  h4{
-    font-size: 16px;
-    margin: 1rem 2rem 0 2rem;
-  }
-  
-  .text_description{
-    font-size: 14px;
-    margin: 2rem;
   }
 
   .card {
-    width: 100px;
+    width: 90px;
   }
 
-  .card-home{
-    margin-left: 25px;
+  .imagemain{
+    height: 400px;
+    width: 280px;
   }
 
-  .card-home2{
-    margin-left: 140px;
-  }
-
-  .card-home3{
-    margin-left: 250px;
+  .bop{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
   }
 
 }
