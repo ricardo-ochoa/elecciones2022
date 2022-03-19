@@ -6,7 +6,7 @@ export const Coaliciones = () => {
     <section className='coalicion-section'>
         <div className='section-coaliciones'>
 
-            <div className='partidos-text'>
+            <div className='coaliciones-text'>
                     <p className='section-title'>ALIANZAS Y CANDIDATURAS</p>
                     <h2 className='subtitle'>Coaliciones 2022</h2>
             </div>

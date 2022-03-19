@@ -3,11 +3,9 @@ import React from 'react'
 export const MainHeader = () => {
   return (
     <div>
+        <section>
         <div className='bg'>
-
             <div className='main'>
-
-
                 <div className='main-text'>
                     <h1>
                     Domingo 5 de junio
@@ -47,12 +45,9 @@ export const MainHeader = () => {
                             alt="peronas" />
 
                         <img className="card"
-                            src={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1647120313/Vota/tres_tec20n.png' }
+                            src={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1647412291/Vota/seis__m7wojy.png' }
                             alt="peronas" />
                             
-                        <img className="card"
-                            src={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1647120313/Vota/uno_dasjna.png' }
-                            alt="peronas" />
 
                     </div>
                     </div>
@@ -93,6 +88,7 @@ export const MainHeader = () => {
             </div>
 
         </div>
+        </section>
     </div>
   )
 }

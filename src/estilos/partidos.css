@@ -1,8 +1,6 @@
 
 /* section */
 
-
-  
   .section {
     margin: 0 auto;
     align-items: flex-start;
@@ -15,8 +13,8 @@
     margin-bottom: 6rem;
   
     grid-template-areas:
-    "partidos-text 0 "
-    "partidos locales ";
+    "partidos-text 0"
+    "partidos locales";
   
     color:  var(--text-color);
   }
@@ -64,40 +62,51 @@
   
   @media (max-width: 1200px) {
   
-  .section {
-    margin: 0 auto;
-    align-items: flex-start;
-    max-width: 800px;
-  
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    
-    margin-top: 6rem;
-    margin-bottom: 12rem;
-  
-    grid-template-areas:
-    "partidos-text "
-    "partidos"
-    "locales";
-  }
+    .section{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
 
   }
   
   @media (max-width: 1024px) {
 
-    section{
-      margin-left: 1rem;
-      margin-right: 1rem;
+    .section {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+      "partidos-text"
+      "partidos"
+      "locales";
     }
-   
+
+ 
+    .partidos-text{
+      width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .partidos-locales{
+      width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+     
+    .partidos{
+      width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    
+    
   
   }
   
   @media (max-width: 600px) {
   
     .section {
-
-      
         grid-template-areas:
         "partidos-text "
         "partidos"
@@ -121,10 +130,34 @@
       }
 
 
+      .partidos-text{
+        width: 100%;
+        padding: 1rem;
+      }
+  
+      .partidos-locales{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 6rem;
+      }
+       
+      .partidos{
+        width: 100%;
+        padding: 1rem;
+      }
+
+
   
   }
   
   @media (max-width: 375px) {
+
+
+    .subtitle{
+      font-size: 34px;
+      margin: 0;
+      font-weight: 800;
+    }
 
   
   }

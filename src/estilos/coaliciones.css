@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.coaliciones-text{
+    grid-area: coaliciones-text;
+}
+
 .section-coaliciones {
     margin: 0 auto;
     padding: 6rem 0rem 6rem 0rem;
@@ -18,7 +22,7 @@
     /* column-gap: 50px; */
     /* margin-bottom: 6rem; */
     grid-template-areas:
-        "partidos-text partidos-text partidos-text"
+        "coaliciones-text coaliciones-text coaliciones-text"
         "vaporqroo pri movimiento"
         "juntoshacemos autentico 0";
     color: var(--text-color);
@@ -50,11 +54,11 @@
 
     .section-coaliciones {
 
-        padding: 6rem 1rem 6rem 1rem;
+        padding: 6rem 2rem 6rem 2rem;
         grid-template-columns: repeat(2, 1fr);
       
         grid-template-areas:
-        "partidos-text partidos-text"
+        "coaliciones-text coaliciones-text"
         "vaporqroo pri"
         "movimiento juntoshacemos"
         "autentico 0";
@@ -76,10 +80,10 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
 
-        margin: 6rem 2rem 6rem 2rem;
+  
       
         grid-template-areas:
-        "partidos-text"
+        "coaliciones-text"
         "vaporqroo"
         "pri"
         "movimiento"
@@ -92,6 +96,12 @@
   }
   
   @media (max-width: 375px) {
+
+    .section-coaliciones {
+      
+        padding: 6rem 1rem 6rem 1rem;
+
+    }
 
   
   }

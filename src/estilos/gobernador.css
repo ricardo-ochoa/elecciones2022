@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 6rem 0rem 0rem 0rem;
     color: var(--text-color);
-    width: 1200px;
+    max-width: 1200px;
 
     /* align-items: flex-start;
     display: grid;
@@ -27,7 +27,7 @@
 
 
 .gobernador-text{
-    width: 577px;
+
 }
 
 .names{
@@ -41,11 +41,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+
 }
 
 .info_partido{
     margin: 1rem 0 0 0;
+    color: gray;
 }
 
 .card_people{
@@ -84,20 +85,37 @@
 
   
 @media (max-width: 1200px) {
+    .gobernador-text{
+        margin: 1rem;
+    }
 
-    .gob_list{
-        width: 100%px;
-        margin-bottom: 5rem;
-
+    .slider{
+        margin: 1rem;
     }
   
 }
     
 @media (max-width: 1024px) {
+    .gobernador-text{
+        margin: 1rem;
 
+    }
+    .gob_list{
+        margin: 1rem;
+        margin-bottom: 5rem;
+    }
+  
 }
     
 @media (max-width: 600px) {
+
+    .card_people{
+        width: 240px;
+        margin-right: 1rem;
+        display: inline-block;
+        flex: 0 0 auto;
+        transition:  transform 450ms;
+    }
     
     
 }

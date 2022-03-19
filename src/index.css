@@ -4,6 +4,10 @@
 @import  "../src/estilos/coaliciones.css";
 @import "../src/estilos/partidos.css";
 @import "../src/estilos/gobernador.css";
+@import "../src/estilos/qrvota.css";
+@import "../src/estilos/diputados.css";
+@import "../src/estilos/squarelink.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
@@ -14,12 +18,35 @@ body {
   overflow-x: hidden;
 }
 
+.section{
+  max-width: 1200px;
+}
+
+hr{
+  border-top: 1px solid #f2f2f2;
+}
+
 html{
   box-sizing: border-box;
 }
 
 *,*:before, *:after {
   box-sizing: inherit;
+}
+
+.btn-primary{
+  background-color: #12203A;
+  width: 250px;
+  height: 44px;
+  color: white;
+  border-radius: .4rem;
+  font-size: 1rem;
+  border: 0;
+  transition:  transform 450ms;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
 }
 
 code {
@@ -56,9 +83,6 @@ code {
 
   display:flex;
   flex-direction: column;
-
-
-  
 }
 
 .card-home2{

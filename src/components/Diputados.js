@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import {Card} from './Card';
+import React, {useState, useEffect} from 'react'
 import parseFile from "../info/api"
+import { CardDiputados } from './CardDiputados';
 
-
-export const Gobernador = ({ candidatos }) => {
+export const Diputados = ({candidatos}) => {
 
     const [person, setPerson] = useState([]);
     const [filtered, setFiltered] = useState([]);
@@ -18,39 +17,42 @@ export const Gobernador = ({ candidatos }) => {
     }, [])
 
     useEffect(() => { 
-
         const filtered = person.filter((element) => (
-            element.puesto === "Gobernación"
+            element.puesto === "Diputado"
         ));
         setFiltered(filtered)
     }, [person])
 
+
   return (
     <div>
         <section>
-        <div className='section-gobernador'>
-            <div className='gobernador-text'>
-                    <p className='section-title'>GOBERNACIÓN</p>
-                    <h2 className='subtitle'>Candidatos al gobierno de Quintana Roo</h2>
+        <div className='section-diputados'>
+            <div className='diputados-text'>
+                    <p className='section-title'>DIPUTADOS</p>
+                    <h2 className='subtitle'>Candidatos a diputados</h2>
 
                 <p className='text_description_partidos'>
-                Conoce a los candidatos a gobernación del estado de Quintana Roo.
+                15 electos por mayoría relativa en cada uno de los distrito electorales del estado y 10 designados mediante el principio de representación proporcional, electos para un periodo de dos años para integrar la XVII Legislatura. 
                 </p>
+            <button className='btn-primary'>Ver reparto y distritos</button>
             </div>
         </div>
 
-        <div className='gob_list'>
+        <div className='diputados_list'>
+
             {
                 filtered.map((candidato) => {
                     return(
-                        <Card
+                        <CardDiputados
                         key={candidato.id} 
                         img={candidato.img}
                         name={candidato.name}
+                        distrito={candidato.distrito}
                         coalicion={candidato.coalicion}
                         />
                     );
-                })         
+                })                
             }
         </div>
         </section>

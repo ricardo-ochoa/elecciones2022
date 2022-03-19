@@ -3,7 +3,6 @@ import React from 'react'
 export const Partidos = () => {
   return (
     <div>
-        <section>
         <div className='section'>
 
             <div className='partidos-text'>
@@ -63,7 +62,6 @@ export const Partidos = () => {
 
         </div>
 
-        </section>
 
     </div>
   )

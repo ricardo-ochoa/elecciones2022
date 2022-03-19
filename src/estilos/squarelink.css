@@ -1,0 +1,123 @@
+.resultados {
+    margin-bottom: 5rem;
+}
+
+.squarelink{   
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 371px;
+    height: 278px;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    
+    margin-right: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition:  transform 450ms;
+    color: var(--text-color);
+}
+
+.info_squarelink {
+    border-radius: .4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+} 
+
+.title_squarelink{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.title_squarelink p{
+    margin-bottom: 0px;
+}
+
+.description_squarelink{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.squarelink:hover {
+    transform: scale(1.05);
+}
+
+.square_link{
+    text-decoration: none;
+}
+
+.resultados_list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-resultados {
+    margin: 0 auto;
+    padding: 2rem 0rem 0rem 0rem;
+    color: var(--text-color);
+    max-width: 1200px;
+}
+
+
+
+@media (max-width: 1210px) {
+    .resultados_list{
+        width: 600px;
+        margin: 0;
+        
+    }
+    .squarelink{
+        width: 320px;
+        height: 200px;
+        margin-right: 1rem ;
+    }
+}
+    
+@media (max-width: 1024px) {
+    .resultados_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .squarelink{
+        width: 270px;
+        height: 240px;
+        margin: 0 auto;
+        margin-right: 1.5rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .resultados_list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .squarelink{
+        width: 270px;
+        height: 240px;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .resultados_list{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .squarelink{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+}
