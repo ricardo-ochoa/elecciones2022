@@ -1,0 +1,79 @@
+.section_denuncias{
+    background-color: #0D1B35;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.link_more_info{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.sugerencias_denuncias{
+    width: 600px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.text_description_denuncias{
+    grid-area: text_description_sugerencias;
+    font-size: 0.8rem;   
+}
+
+.link_denuncias {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+}
+
+.link_denuncias:hover {
+    text-decoration: underline;
+    color: rgb(222, 182, 255);
+}
+
+
+.subtitle_denuncias{
+    grid-area: subtitle_sugerencias;  
+}
+
+.subtitle_denuncias{
+    font-size: 22px;
+}
+
+.derechos{
+    margin-top: 4rem;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1024px) {
+    
+    .sugerencias_denuncias{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section_denuncias{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .subtitle_denuncias{
+        font-size: 20px;
+    }
+    .link_denuncias {
+        font-size: 1.2rem;
+
+    }
+  
+}
+
+@media (max-width: 600px) {
+    
+    .sugerencias_denuncias{
+        text-align: start;
+        width: 100%;
+    }
+}

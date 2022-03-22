@@ -1,0 +1,57 @@
+.section-sugerencias{
+    background-color: #f9f9f9;
+    color: var(--text-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sugerencias-text{
+    width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_description_sugerencias{
+    grid-area: text_description_sugerencias;
+    font-size: 1rem;   
+}
+
+.link_sigerencias {
+    text-decoration: none;
+    color: black;
+}
+
+.link_sigerencias:hover {
+    text-decoration: underline;
+    color: rgb(78, 5, 138);
+}
+
+
+.btn_sugerencia{
+    grid-area: btn_sugerencia;
+}
+
+.subtitle_sugerencias{
+    grid-area: subtitle_sugerencias;  
+}
+
+@media (max-width: 1024px) {
+    
+    .sugerencias-text{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text_description_sugerencias{
+        margin-bottom: 3rem;
+    }
+
+    .section-sugerencias{
+        padding-left: 1rem;
+    }
+  
+}

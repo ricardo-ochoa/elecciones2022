@@ -33,8 +33,7 @@
     font-size: 43px;
     margin: 0;
     font-weight: 800;
-
-    background: -webkit-linear-gradient(#00b7ff,rgb(0, 140, 255));
+    background: -webkit-linear-gradient(rgb(78, 5, 138),rgb(100, 58, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #110296;
@@ -49,6 +48,7 @@
 
   .link_ht:hover{
     text-decoration: underline;
+    color: #110296;
   }
   
   h4{

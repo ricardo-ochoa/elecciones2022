@@ -1,0 +1,41 @@
+.header{
+    z-index: 3;
+    width: 100%;
+    padding: 2rem 3rem 0rem 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+	position: absolute;
+	top: 0;
+	color: white
+}
+
+.Logo{
+    /* margin-left: 15rem; */
+}
+
+.Menu-icon{
+    font-size: 1rem;
+    color: white;
+    /* margin-right: 4rem; */
+    width: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    
+
+  
+}
+
+@media (max-width: 600px) {
+    
+
+}
