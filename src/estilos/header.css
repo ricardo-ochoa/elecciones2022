@@ -1,11 +1,39 @@
-.header{
-    z-index: 3;
-    width: 100%;
-    padding: 2rem 3rem 0rem 3rem;
+.visible-none{
+    display: none;
+}
 
+.text-decoration{
+    font-size: 30rem;
+
+    color: #1b1c1f85;
+    position: fixed;
+    font-weight: 900;
+    bottom: -40rem;
+    z-index: -1;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.header-container{
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.header{
+    z-index: 5;
+    padding: 2rem 3rem 1rem 3rem;
+    width: 100%;
+    /* max-width: 1800px; */
+    display: flex;
+    align-content: center;
     justify-content: space-between;
-    align-items: center;
 
     margin: 0 auto;
 	position: absolute;
@@ -14,7 +42,7 @@
 }
 
 .Logo{
-    /* margin-left: 15rem; */
+    width: 170px;
 }
 
 .Menu-icon{
@@ -29,13 +57,43 @@
     cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+
+
+
+@media (max-width: 1200px) {
     
+    .header{
+
+        padding: 2rem 3rem 2rem 3rem;
+        backdrop-filter: blur(8px);
+        opacity: 60%;
+    }
 
   
 }
 
 @media (max-width: 600px) {
     
+    .header{
+
+
+    }
+
+  
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+
+        padding: 1rem 1rem 0rem 1rem;
+
+    }
+
+
+    .Logo{
+        width: 120px;
+    }
+
 
 }

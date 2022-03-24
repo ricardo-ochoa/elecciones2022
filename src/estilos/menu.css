@@ -1,0 +1,62 @@
+.menu {
+    background-color: #202124;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+
+}
+
+.menu-list{
+    color: white;
+    list-style:none;
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: white;
+    transition:  transform 450ms;
+    text-decoration: none;
+
+    -webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.menu-list a:hover {
+    transform: scale(1.05);
+    color: rgb(222, 188, 255);
+
+    -webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+
+.Menu-icon-close{
+    width: 25px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    
+    .menu-list{
+
+        font-size: 1.5rem;
+
+    }
+  
+}

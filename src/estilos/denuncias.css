@@ -64,7 +64,7 @@
         font-size: 20px;
     }
     .link_denuncias {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
     }
   
@@ -75,5 +75,10 @@
     .sugerencias_denuncias{
         text-align: start;
         width: 100%;
+    }
+
+    .link_denuncias {
+        font-size: .8rem;
+
     }
 }

@@ -26,7 +26,7 @@ export const Gobernador = ({ candidatos }) => {
     }, [person])
 
   return (
-    <div>
+    <div id='candidatos'>
         <section>
         <div className='section-gobernador'>
             <div className='gobernador-text'>

@@ -1,6 +1,8 @@
 
 
-
+#candidatos{
+    scroll-behavior: smooth;
+}
 .section-gobernador {
     margin: 0 auto;
     padding: 6rem 0rem 0rem 0rem;

@@ -10,6 +10,7 @@
 @import "../src/estilos/sugerencias.css";
 @import "../src/estilos/denuncias.css";
 @import "../src/estilos/header.css";
+@import "../src/estilos/menu.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -71,7 +72,7 @@ code {
 }
 
 .gradient{
-  z-index: 0;
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -168,7 +169,7 @@ code {
 
 
 .main-text{
-  z-index: 1;
+
   color: white;
   max-width: 570px;
   grid-area: text;
@@ -202,7 +203,6 @@ h4{
     width: 110px;
   }
 
-
 }
 
 @media (max-width: 1024px) {
@@ -216,6 +216,8 @@ h4{
   .imagemain{
     height: 400px;
 
+    margin-top: 4.45rem;
+
   }
 
   .gradient{
@@ -224,7 +226,7 @@ h4{
   }
 
   .main-text{
-    z-index: 2;
+
     margin: 0 auto;
     text-align: center;
     margin-bottom: 1.8rem;

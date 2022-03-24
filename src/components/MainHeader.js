@@ -2,7 +2,7 @@ import React from 'react'
 
 export const MainHeader = () => {
   return (
-    <div>
+    <div id='Main'>
         <section>
         <div className='bg'>
             <div className='main'>
@@ -14,7 +14,7 @@ export const MainHeader = () => {
                     <p className='text_description'>Los mexicanos volvemos a las urnas para participar en las elecciones ordinarias. En Quintana Roo, también se buscará Gobernatura del estado, 15 diputaciones por mayoría relativa y 10 de representación proporcional.</p>
                 </div>
 
-                <div className='wrapper'>
+                <div className='wrapper animate__animated animate__zoomIn'>
                     <div  className='imagemain' id='canvas'>
                     
                     <div className='bop'>

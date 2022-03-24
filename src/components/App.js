@@ -6,6 +6,7 @@ import { Footer } from './Footer';
 import { Gobernador } from './Gobernador';
 import { Header } from './Header';
 import { MainHeader } from './MainHeader';
+import { Menu } from './Menu';
 import { Partidos } from './Partidos';
 import { Qrvota } from './Qrvota';
 import { Resultados } from './Resultados';
