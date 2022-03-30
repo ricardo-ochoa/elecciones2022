@@ -9,7 +9,7 @@ export const CardDiputados = ({img, name, distrito, coalicion}) => {
     <div className='info_description'>
         <p className='names_diputados'>{name}</p>
         <p className='info_partido_diputados'>{coalicion}</p>
-        <p className='info_partido_diputados'>{distrito}</p>        
+        <p className='info_partido_diputados'>Distrito {distrito}</p>        
     </div>
 
 </div>

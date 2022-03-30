@@ -1,0 +1,33 @@
+.container-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image-banner{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    margin-top: -10rem;
+}
+
+.banner{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .banner{
+        width: 100%;
+        padding: 4rem 1rem 1rem 1rem;
+        font-size: 0.8rem;   
+    }
+  }

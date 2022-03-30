@@ -18,7 +18,6 @@ export const Gobernador = ({ candidatos }) => {
     }, [])
 
     useEffect(() => { 
-
         const filtered = person.filter((element) => (
             element.puesto === "Gobernación"
         ));

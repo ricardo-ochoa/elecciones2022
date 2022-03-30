@@ -1,0 +1,63 @@
+.distritos_filters{
+    width: 100%;
+    background-color: #f9f9f9;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista{
+    overflow-x: scroll;
+}
+.distritos-list{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+.distrito-btn{
+    width: 38px;
+    height: 38px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.distrito-btn-none{
+
+    display: none;
+}
+
+.distrito-btn:hover{
+    background-color: #e0e0e0;
+}
+
+.distrito-btn-active{
+    background-color: #e0e0e0;
+}
+.distrito-btn:active{
+    background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    
+    .distritos-list{
+        padding: 1rem;
+    }
+
+  
+}
