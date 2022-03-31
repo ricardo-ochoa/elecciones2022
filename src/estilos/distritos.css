@@ -53,6 +53,49 @@
     display: none;
 }
 
+.text_description_distritos{
+    font-weight: 700;
+    font-size: 43px;
+    color: #3A3D4F;
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    grid-area: title;
+  }
+
+.distrito_diputados_list{
+    width: 800px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+
+    grid-area: cards;
+    
+}
+
+.distritos_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "title title"
+        "cards 0";
+}
+
+.mapa{
+    width: 300px;
+    margin-top: 2rem;
+}
+
+.active{
+    fill: rgb(224, 187, 255);
+}
+
 @media (max-width: 600px) {
     
     .distritos-list{

@@ -28,13 +28,7 @@ export const Distritos = () => {
             element.puesto === "Diputado"
         ));
         setFiltered(filtered)
-       
     }, [person])
-
-
-    const getInfoByDistrit = ( number ) => {
-      return person.filter( people => people.distrito === number);
-    }
 
   return (
     <div>

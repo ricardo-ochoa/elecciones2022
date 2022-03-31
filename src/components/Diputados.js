@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 import parseFile from "../info/api"
 import { CardDiputados } from './CardDiputados';
 
@@ -35,14 +36,17 @@ export const Diputados = ({candidatos}) => {
                 <p className='text_description_partidos'>
                 15 electos por mayoría relativa en cada uno de los distrito electorales del estado y 10 designados mediante el principio de representación proporcional, electos para un periodo de dos años para integrar la XVII Legislatura. 
                 </p>
+
+            <Link to={`/distritos`}>
             <button className='btn-primary'>Ver reparto y distritos</button>
+            </Link>
             </div>
         </div>
 
         <div className='diputados_list'>
 
             {
-                filtered.map((candidato) => {
+                filtered.slice(0, 4).map((candidato) => {
                     return(
                         <CardDiputados
                         key={candidato.id} 

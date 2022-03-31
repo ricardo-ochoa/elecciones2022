@@ -17,12 +17,14 @@
 }
 
 .card_diputados{
-    width: 270px;
+    width: 250px;
     display: inline-block;
     flex: 0 0 auto;
     transition:  transform 450ms;
 
     grid-area: card_diputado;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 
 .card_diputados:hover {
@@ -46,6 +48,7 @@
     font-size: 16px;
     color: black;
     margin: 1rem 0 0 0;
+    text-align: start;
 }
 
 .info_description_diputados{
