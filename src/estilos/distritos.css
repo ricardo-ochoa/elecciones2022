@@ -9,7 +9,7 @@
 }
 
 .lista{
-    overflow-x: scroll;
+    
 }
 .distritos-list{
     background-color: #f9f9f9;
@@ -17,9 +17,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 
-    width: 800px;
     margin: 0 auto;
+
 }
 
 .distrito-btn{
@@ -31,7 +32,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 .distrito-btn-none{
 
@@ -90,16 +91,53 @@
 .mapa{
     width: 300px;
     margin-top: 2rem;
+    grid-area: mapa;
 }
 
 .active{
     fill: rgb(224, 187, 255);
 }
 
+@media (max-width: 1100px) {
+    
+    .distritos_container{
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "title"
+            "mapa"
+            "cards "; 
+    }
+
+    .distrito_diputados_list{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+
+
+  
+}
+
 @media (max-width: 600px) {
     
     .distritos-list{
-        padding: 1rem;
+        padding: 0.7rem;
+    }
+
+    .distrito-btn{
+        width: 38px;
+        height: 38px;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 100px;
     }
 
   
