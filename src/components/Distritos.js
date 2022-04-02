@@ -5,14 +5,12 @@ import { Footer } from './Footer'
 import { Header } from './Header'
 
 import parseFile from "../info/api"
-import { InfoDistrito } from './InfoDistrito'
 
 export const Distritos = () => {
 
   const [person, setPerson] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [filteredDiputados, setFilteredDiputados] = useState([]);
-
+  
     
     async function fetchParsedData() {
         const parsedData = await parseFile()
@@ -40,7 +38,6 @@ export const Distritos = () => {
       <div className='lista'>
 
           <DistritosBtn data={filtered} />
-
 
       </div>
 

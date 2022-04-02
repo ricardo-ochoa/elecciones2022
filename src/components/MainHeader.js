@@ -79,12 +79,6 @@ export const MainHeader = () => {
                     </div>
                 </div>
 
-                {/* <img className='imagemain'
-                    src={ imagemain }
-                    alt="background"
-                /> */}
-
-                                {/* <div className='gradient'></div> */}
             </div>
 
         </div>

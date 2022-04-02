@@ -64,7 +64,7 @@ export const Header = () => {
                             `
                         }</style></defs>
                         <g id="a"/><g id="b"><g id="c">
-                        <g><rect class="d" width="100" height="5"/><rect class="d" y="32.08" width="100" height="5"/>
+                        <g><rect className="d" width="100" height="5"/><rect className="d" y="32.08" width="100" height="5"/>
                         </g></g></g>
                 </svg>
             </div>
@@ -79,8 +79,8 @@ export const Header = () => {
                             .d{fill:#fff;}
                             `
                         }</style></defs>
-                <g id="a"/><g id="b"><g id="c"><g><rect class="d" x="-12.88" y="34.62" width="100" height="5" transform="translate(-15.38 37.12) rotate(-45)"/>
-                <rect class="d" x="34.62" y="-12.88" width="5" height="100" transform="translate(-15.38 37.12) rotate(-45)"/></g></g></g></svg>
+                <g id="a"/><g id="b"><g id="c"><g><rect className="d" x="-12.88" y="34.62" width="100" height="5" transform="translate(-15.38 37.12) rotate(-45)"/>
+                <rect className="d" x="34.62" y="-12.88" width="5" height="100" transform="translate(-15.38 37.12) rotate(-45)"/></g></g></g></svg>
             </div>
         </div>
 

@@ -1,28 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Card} from './Card';
-import parseFile from "../info/api"
-
 
 export const Gobernador = ({ candidatos }) => {
-
-    const [person, setPerson] = useState([]);
-    const [filtered, setFiltered] = useState([]);
-    
-    async function fetchParsedData() {
-        const parsedData = await parseFile()
-        setPerson(parsedData)
-    }
-
-    useEffect(() => { 
-        fetchParsedData()
-    }, [])
-
-    useEffect(() => { 
-        const filtered = person.filter((element) => (
-            element.puesto === "Gobernación"
-        ));
-        setFiltered(filtered)
-    }, [person])
 
   return (
     <div id='candidatos'>
@@ -40,9 +19,10 @@ export const Gobernador = ({ candidatos }) => {
 
         <div className='gob_list'>
             {
-                filtered.map((candidato) => {
+                candidatos.map((candidato) => {
                     return(
                         <Card
+                        id={candidato.id}
                         key={candidato.id} 
                         img={candidato.img}
                         name={candidato.name}

@@ -5,6 +5,7 @@ export const InfoDistrito = ({ id,img, name, coalicion ,distrito, func }) => {
   return (
 
         <CardDiputados 
+            id={id}
             key={id} 
             img={img}
             name={name}

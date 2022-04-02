@@ -1,28 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom';
-import parseFile from "../info/api"
+import { Link, useParams } from 'react-router-dom';
 import { CardDiputados } from './CardDiputados';
 
 export const Diputados = ({candidatos}) => {
 
-    const [person, setPerson] = useState([]);
-    const [filtered, setFiltered] = useState([]);
-    
-    async function fetchParsedData() {
-        const parsedData = await parseFile()
-        setPerson(parsedData)
-    }
 
-    useEffect(() => { 
-        fetchParsedData()
-    }, [])
+    const {  } = useParams();
 
-    useEffect(() => { 
-        const filtered = person.filter((element) => (
-            element.puesto === "Diputado"
-        ));
-        setFiltered(filtered)
-    }, [person])
 
 
   return (
@@ -46,15 +30,17 @@ export const Diputados = ({candidatos}) => {
         <div className='diputados_list'>
 
             {
-                filtered.slice(0, 4).map((candidato) => {
+                candidatos.slice(0, 4).map((candidato) => {
+                    
                     return(
-                        <CardDiputados
-                        key={candidato.id} 
-                        img={candidato.img}
-                        name={candidato.name}
-                        distrito={candidato.distrito}
-                        coalicion={candidato.coalicion}
-                        />
+                            <CardDiputados
+                            id={candidato.id}
+                            key={candidato.id} 
+                            img={candidato.img}
+                            name={candidato.name}
+                            distrito={candidato.distrito}
+                            coalicion={candidato.coalicion}
+                            />
                     );
                 })                
             }
