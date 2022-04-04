@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import { Link, NavLink } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import '../assets/Logo.svg';
-import { Menu } from './Menu';
+
 
 export const Header = () => {
 
@@ -96,7 +96,7 @@ export const Header = () => {
 
             <HashLink 
                 
-                to="#candidatos" smooth
+                to="/#candidatos" smooth
                 onClick={() => setShow(false)}
             ><li className='animate__animated animate__flipInX animate__delay-1s	1s'>Candidatos a gobernación</li></HashLink >
 

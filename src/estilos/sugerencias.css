@@ -43,7 +43,6 @@
     .sugerencias-text{
         width: 100%;
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .text_description_sugerencias{
@@ -51,7 +50,9 @@
     }
 
     .section-sugerencias{
-        padding-left: 1rem;
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
     }
   
 }

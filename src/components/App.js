@@ -26,7 +26,7 @@ export const App = () => {
   }
 
   useEffect(() => { 
-      fetchParsedData()
+    fetchParsedData()
   }, [])
 
   useEffect(() => { 
@@ -40,6 +40,8 @@ export const App = () => {
       setdiputados(diputados)
 
   }, [person])
+
+
 
   return (
     <div>
