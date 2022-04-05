@@ -13,7 +13,7 @@ export const Denuncias = () => {
                 <strong> <a className='link_denuncias' href="mailto:denuncias_electorale@quintanaroovota.com">denuncias_electorales@quintanaroovota.com</a> </strong>
             </div>
         </div>
-            <p className='derechos'>© 2022 – Observatorio Legislativo del Caribe  –  CCE</p>
+            <p className='derechos'>© 2022 – Ochoagram</p>
     </div>
     </div>
   )

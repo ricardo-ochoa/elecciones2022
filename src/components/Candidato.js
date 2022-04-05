@@ -37,7 +37,7 @@ export const Candidato = () => {
     const filtered = person.filter((element) => (
         element.id === id 
     ));
-
+    console.log(filtered)
     setFiltered(filtered)
   }, [person])
 
@@ -47,7 +47,7 @@ export const Candidato = () => {
       element.nombre === id 
     ));
     setFilteredExperience(filteredExperience)
-    console.log(filteredExperience)
+    
   }, [experiece])
 
   
@@ -85,12 +85,17 @@ export const Candidato = () => {
                     <li><p><span className='puesto'>Lugar de nacimiento:</span> {people.nacimiento}</p></li>
                     <li><p><span className='puesto'>Área de desempeño:</span> {people.desempeno}</p></li>
                     <li><p><span className='puesto'>Estudios:</span> {people.estudios}</p></li>
-                    <li><p><span className='puesto'>Redes sociales:</span></p> <a href={people.facebook}>facebook</a></li>
+                    <li><p><span className='puesto'>Redes sociales:</span></p>
+                        <p className='redes'><a style={{display: `${people.facebook}` === "" ? "none" : ""}} target="_blank" href={people.facebook}> Facebook</a>
+                        <a style={{display: `${people.instagram}` === "" ? "none" : ""}} target="_blank" href={people.instagram}> Instagram</a>
+                        <a style={{display: `${people.twitter}` === "" ? "none" : ""}} target="_blank" href={people.twitter}>Twitter</a> </p>
+                    </li>
+                        
                   </ul>
                 </div>
 
                 <div className='experiencia'>
-                  <p className='subtitle2'>Experiencia:</p>
+                  <p  style={{display: `${filteredExperience}` === "" ? "none" : ""}} className='subtitle2'>Experiencia:</p>
                     {
                       filteredExperience.map((people) => {
                         return(
